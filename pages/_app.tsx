@@ -22,12 +22,13 @@ export default function App(props: AppProps) {
           colorScheme: "light",
 
           colors: {
-            blue: ["#06A0DB"],
-            black: ["#11232F", "#111E27"],
-            white: ["#F1F1F3"],
+            'blue': ['#06a0db', '#0590c5', '#0580af', '#047099', '#046083', '#03506e', '#024058', '#023042', '#01202c', '#011016'],
+            'black': ["#11232F", "#111E27"],
+            'white': ["#F1F1F3"],
           },
 
           primaryColor: "blue",
+          primaryShade: 0,
 
           fontFamily: "Roboto, sans-serif",
           fontSizes: {
@@ -40,24 +41,9 @@ export default function App(props: AppProps) {
 
           headings: {
             sizes: {
-              h1: { fontWeight: 400, fontSize: "xl" },
+              h1: { fontWeight: 700 },
             },
           },
-
-          globalStyles: () => ({
-            ".center-in-page": {
-              margin: "auto",
-              width: "50%",
-              textAlign: "center",
-            },
-
-            ".test": {
-              margin: "auto",
-              backgroundColor: "blue",
-              width: "50px",
-              textAlign: "center",
-            },
-          }),
         }}
       >
         <Component {...pageProps} />
